@@ -1,3 +1,4 @@
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,6 @@ public class TextLabelBehaviour : MonoBehaviour
     private void Start()
     {
         label = GetComponant<Text>();
-        label.text = dataObj.value.ToString();
+        label.text = dataObj.value.ToString(CultureInfo.InvariantCulture);
     }
 }
