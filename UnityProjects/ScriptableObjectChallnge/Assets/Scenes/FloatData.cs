@@ -1,16 +1,15 @@
 using UnityEngine;
 
-public class FloatData : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+[CreateAssetMenu]
+public class FloatData : ScriptableObject
+{
+    public float value;
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateValue(float num)
     {
-        
+        value += num;
     }
+}
+
 }
