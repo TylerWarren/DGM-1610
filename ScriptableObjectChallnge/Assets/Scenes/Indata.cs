@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.Ui;
+using UnityEngine.UI;
 
 [CreateAssetMenu]
 public class Indata : ScriptableObject
