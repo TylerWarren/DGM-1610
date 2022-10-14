@@ -1,6 +1,7 @@
 using UnityEngine;
 
 public class MySo : ScriptableObject
+
 {
     {
         public GameObject entityToSpawn;
