@@ -7,10 +7,8 @@ public class MySo : ScriptableObject
 
     public SpawnManagerScriptableObject spawnManagerValues;
 
-    int instanceNumber = 1;
-    
         {
-            SpawnEntities();
+         SpawnEntities();
         }
     
 }
