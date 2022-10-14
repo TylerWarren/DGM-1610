@@ -8,5 +8,4 @@ public class MySo : ScriptableObject
     int instanceNumber = 1;
     void Start()
     }
-    
 }
