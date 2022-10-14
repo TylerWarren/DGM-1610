@@ -1,17 +1,16 @@
 using UnityEngine;
 
 public class MySo : ScriptableObject
-
 {
-    {
-        public GameObject entityToSpawn;
+    
+    public GameObject entityToSpawn;
 
-        public SpawnManagerScriptableObject spawnManagerValues;
+    public SpawnManagerScriptableObject spawnManagerValues;
 
-        int instanceNumber = 1;
-     
+    int instanceNumber = 1;
+    
         {
             SpawnEntities();
         }
-    }
+    
 }
