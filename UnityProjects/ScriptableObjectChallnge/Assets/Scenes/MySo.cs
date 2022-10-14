@@ -7,8 +7,5 @@ public class MySo : ScriptableObject
 
     public SpawnManagerScriptableObject spawnManagerValues;
 
-        {
-         SpawnEntities();
-        }
-    
+
 }
