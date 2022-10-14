@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class MySo : ScriptableObject
 {
-    // Start is called before the first frame update
+    {
+        public GameObject entityToSpawn;
+    public SpawnManagerScriptableObject spawnManagerValues;
+    int instanceNumber = 1;
     void Start()
-    {
-        
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
