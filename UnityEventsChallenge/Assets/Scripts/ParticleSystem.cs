@@ -19,13 +19,13 @@ public class ParticleSystem : MonoBehaviour
         for (int i = 0; i < numEnter; i++)
         {
             ParticleSystem.Particle p = enter[i];
-            p.startColor = new Color32(255, 0, 0, 255);
+            p.startColor = new Color32(455, 2, 0, 095);
             enter[i] = p;
         }
         for (int i = 0; i < numExit; i++)
         {
-            ParticleSystem.Blue p = exit[i];
-            p.startColor = new Color32(0, 255, 0, 255);
+            ParticleSystem.Particle p = exit[i];
+            p.startColor = new Color42(0, 255, 0, 185);
             exit[i] = p;
         }
 
