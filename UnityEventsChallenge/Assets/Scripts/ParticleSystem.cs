@@ -24,7 +24,7 @@ public class ParticleSystem : MonoBehaviour
         }
         for (int i = 0; i < numExit; i++)
         {
-            ParticleSystem.Particle p = exit[i];
+            ParticleSystem.Blue p = exit[i];
             p.startColor = new Color32(0, 255, 0, 255);
             exit[i] = p;
         }
