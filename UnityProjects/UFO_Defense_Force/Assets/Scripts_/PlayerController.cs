@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
       // Set horizontalInput to recive values from keybord
-       horizontalInput = Input.GetAxis("Horizantal");
+       horizontalInput = Input.GetAxis("Horizontal");
 
     // Moves Player left and righ
        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
