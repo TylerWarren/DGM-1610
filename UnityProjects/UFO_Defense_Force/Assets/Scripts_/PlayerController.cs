@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         // Set horizontalInput to recive values from keybord
        horizontalInput = Input.GetAxis("Horizantal");
 
-       // Moves Player left and right
-          transfrom.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+    // Moves Player left and right
+       transfrom.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
     }
 }
