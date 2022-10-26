@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    
     public float horizontalInput;
-
     public float speed;
 
     
@@ -19,6 +17,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       horizontalImput = Input.GetAxis("Horizantal");
+        // Set horizontalInput to recive values from keybord
+       horizontalInput = Input.GetAxis("Horizantal");
+
+       // Moves Player left and right
+       transfrom.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
     }
 }
