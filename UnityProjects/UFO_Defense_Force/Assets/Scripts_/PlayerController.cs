@@ -41,8 +41,8 @@ public class PlayerController : MonoBehaviour
          // if space bar is pressed fire lazerbolt
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            //Create lazerBolt at the blaster transform position maintaining the objects rotaion.
-            Instantiate(lazerBolt, blaster.transform.position, lazerBolt.transform.rotaion);
+            //Create lazerBolt at the blaster transform position maintaining the objects rotation.
+            Instantiate(lazerBolt, blaster.transform.position, lazerBolt.transform.rotation);
         }
    
     }
