@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Set horizontalInput to recive values from keybord
+      // Set horizontalInput to recive values from keybord
        horizontalInput = Input.GetAxis("Horizantal");
 
     // Moves Player left and right
