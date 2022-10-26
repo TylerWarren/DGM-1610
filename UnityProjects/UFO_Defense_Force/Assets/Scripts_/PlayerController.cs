@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    
     public float horizontalInput;
+
     public float speed;
 
     
