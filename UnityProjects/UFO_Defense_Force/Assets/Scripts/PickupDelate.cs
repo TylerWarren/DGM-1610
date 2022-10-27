@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class PickupDelate : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collider) 
+
+   private void OnCollisionEnter(Collision collider) 
     {
-        if(col.gameObject.tag == "Pickup")
-        
-         {
-             Destroy(col.gameObject);
-         }
+      GameObject.Destroy(gameObject);
     }
 } 
 
