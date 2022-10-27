@@ -6,9 +6,12 @@ public class PickupDelate : MonoBehaviour
 {
  void OnCollisionEnter(Collision collision) 
 
- { if(collision.gameObject.name == "barrierdestroyer1")
-     { Destroy(barrier1); 
-         }
+    { if(collision.gameObject.name == "barrierdestroyer1")
+
+     { 
+        Destroy(barrier1); 
+     }
+
      } 
  } 
 
