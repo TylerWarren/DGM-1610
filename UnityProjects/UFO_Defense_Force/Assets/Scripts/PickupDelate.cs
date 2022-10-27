@@ -8,7 +8,8 @@ public class PickupDelate : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            Destroy (gameObject)
+            print ("Item picked up");
+            Destroy (gameObject);
         }
     }
 } 
