@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnerScript : MonoBehaviour
 {
-    public GameObject spawner;
+    public GameObject spawnee;
     public bool stopSpawning = false;
     public float spawnTime;
     public float spawnDelay;
@@ -19,7 +19,7 @@ public class SpawnerScript : MonoBehaviour
     public void SpawnObject()
 
     {
-        Instantiate(spawner, transform.position, transfrom.rotation);
+        Instantiate(spawnee, transform.position, transfrom.rotation);
         if(stopSpawning)
         {
             CancelInvoke("SpawnObject");
