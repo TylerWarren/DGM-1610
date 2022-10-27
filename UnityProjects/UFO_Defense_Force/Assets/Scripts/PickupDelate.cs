@@ -8,7 +8,7 @@ public class PickupDelate : MonoBehaviour
  void OnCollisionEnter(Collision collision) 
 
     { 
-        if(collision.gameObject.name == "Pickup")
+        if(collision.gameObject.name == "Player")
         { 
              Destroy(collision.gameObject); 
         }
