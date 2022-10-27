@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PickupDelate : MonoBehaviour
 {
-
-   private void OnCollisionEnter(Collision collider) 
+    private void OnCollisionEnter(Collision collider) 
     {
       GameObject.Destroy(gameObject);
     }
