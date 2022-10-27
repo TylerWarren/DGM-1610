@@ -8,6 +8,7 @@ public class PickupObject : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
+            print ("Item picked up");
             Destroy (gameObject)
         }
     }
