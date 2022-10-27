@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupObject : MonoBehaviour
+public class PickupDelate : MonoBehaviour
 {
     void OnTriggerEnter(Collider collider) 
     {
