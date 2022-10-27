@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupDelate : MonoBehaviour
+public class PickupDelate: MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collider) 
+    void OnTriggerEnter(Collider collider) 
     {
-      GameObject.Destroy(gameObject);
+        if (collider.gameObject.tag == "Player")
+        {
+            print ("Item picked up");
+            Destroy (gameObject)
+        }
     }
 } 
 
