@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class PickupDelate : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other) 
+    void OnTriggerEnter(Collider collider)
     {
+        if(collider.gameObject.tag == "Player")
         {
-            PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
-
-            if (playerInventory != null)
-            gameObject.SetActive(false);
+            print ("Itam picked up");
+            Destroy (gameObject);
         }
     }
 } 
