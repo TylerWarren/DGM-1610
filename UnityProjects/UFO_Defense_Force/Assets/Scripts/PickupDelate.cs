@@ -8,8 +8,8 @@ public class PickupDelate : MonoBehaviour
     void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.tag == "Player")
-
-        if (gameObject != null)
+        
+        if(gameObject != null)
         {
             Destroy (gameObject);
         }
