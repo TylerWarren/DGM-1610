@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject pickup;
-    public float delay = 2f;
-    public float speed = 3f;
-    float nextTimeToSpawn;
+    public float delay;
+    public GameObject objectToSpawn;
 
+    // Start is called before the first frame update
     void Start()
     {
-        nextTimeToSpawn = Time.time;
+        StartCoroutine(WaitToSpawn());
     }
 
-    void Update()
+    IEunmerator WaitToSpawn ()
     {
-        if (Time.time > nextTimeToSpawn)
-        {
-            nextTimeToSpawn = Time.time + delay;
-            GameObject go = Instantiate(pickup, transform.position, Quaternion.identity);
-            go.AddComponent<Pickup>();
-            go.GetComponent<Pickup>().speed = speed;
-        }
+        yield return new WaitForSeconds(delay);
+        Spawn();
+    }
+
+    void Spawn ()
+    {
+        Instantiate(objectToSpawn, transform.position, transform.rotation);
+        StartCoroutine(WaitToSpawn());
     }
 }
