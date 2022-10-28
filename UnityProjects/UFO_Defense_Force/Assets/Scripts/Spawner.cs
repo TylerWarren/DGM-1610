@@ -20,8 +20,8 @@ public class Spawner : MonoBehaviour
         {
             nextTimeToSpawn = Time.time + delay;
             GameObject go = Instantiate(pickup, transform.position, Quaternion.identity);
-            go.AddComponent<Move>();
-            go.GetComponent<Move>().speed = speed;
+            go.AddComponent<Pickup>();
+            go.GetComponent<Pickup>().speed = speed;
         }
     }
 }
