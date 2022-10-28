@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickupDelate : MonoBehaviour
 {
     
-    void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Player")
         {
