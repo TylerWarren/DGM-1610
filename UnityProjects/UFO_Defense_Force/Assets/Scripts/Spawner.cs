@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
         StartCoroutine(WaitToSpawn());
     }
 
-    IEunmerator WaitToSpawn ()
+    IEnumerator WaitToSpawn ()
     {
         yield return new WaitForSeconds(delay);
         Spawn();
