@@ -23,7 +23,7 @@ public class ScoreScript : MonoBehaviour
     private void OnTriggerEnter(Collider Pickup)
     {
 
-        if (Pickup.tag == "Pickup")
+        if (Pickup.tag == "MyPickup")
         {
 
             ScoreNum += 1;
