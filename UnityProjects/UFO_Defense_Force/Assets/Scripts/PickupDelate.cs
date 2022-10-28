@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class PickupDelate : MonoBehaviour
 {
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider collision)
     {
-        if(collider.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Player")
         {
-            print ("Itam picked up");
             Destroy (gameObject);
-             //Time.timeScale = 0;
         }
     }
 } 
