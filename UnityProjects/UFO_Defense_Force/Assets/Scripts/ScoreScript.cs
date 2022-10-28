@@ -19,5 +19,19 @@ public class ScoreScript : MonoBehaviour
 
     }
 
+
+    private void OnTriggerEnter(Collider Pickup)
+    {
+
+        if (Pickup.tag == "Pickup")
+        {
+
+            ScoreNum += 1;
+            Destroy(Pickup.gameObject);
+            MyscoreText.text = "Score" + ScoreNum;
+
+        }
+
+    }
     
 }
