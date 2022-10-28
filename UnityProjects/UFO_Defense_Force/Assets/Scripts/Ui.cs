@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Ui : MonoBehaviour
 {
-    public Text MyscoreText
+    public Text MyscoreText;
     private int ScoreNum;
 
 
