@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject pickup
+    public GameObject pickup;
     public float delay = 2f;
     public float speed = 3f;
     float nextTimeToSpawn;
