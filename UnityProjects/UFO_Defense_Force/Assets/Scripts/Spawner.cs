@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
         if (Time.time > nextTimeToSpawn)
         {
             nextTimeToSpawn = Time.time + delay;
-            GameObject go = Instantiate(item, transform.position, Quaternion.identity);
+            GameObject go = Instantiate(pickup, transform.position, Quaternion.identity);
             go.AddComponent<Move>();
             go.GetComponent<Move>().speed = speed;
         }
