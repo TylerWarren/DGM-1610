@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-public GameObject pickup
-public float delay = 2f;
-public float speed = 3f;
-float nextTimeToSpawn;
+    public GameObject pickup
+    public float delay = 2f;
+    public float speed = 3f;
+    float nextTimeToSpawn;
 
-void Start()
+    void Start()
     {
         nextTimeToSpawn = Time.time;
     }
 
-void Update()
+    void Update()
     {
         if (Time.time > nextTimeToSpawn)
         {
