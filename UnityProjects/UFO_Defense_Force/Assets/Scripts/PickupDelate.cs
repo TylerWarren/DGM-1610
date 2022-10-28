@@ -10,6 +10,7 @@ public class PickupDelate : MonoBehaviour
         {
             print ("Itam picked up");
             Destroy (gameObject);
+             //Time.timeScale = 0;
         }
     }
 } 
