@@ -13,7 +13,7 @@ public class EnemySpawnManager : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("SpawnRandomUFO", startDelay, spawnInterval)
+        InvokeRepeating("SpawnRandomUFO", startDelay, spawnInterval);
     }
 
     // Update is called once per frame
