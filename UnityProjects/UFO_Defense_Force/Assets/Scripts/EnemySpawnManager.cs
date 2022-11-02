@@ -12,7 +12,7 @@ public class EnemySpawnManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.S))
         {
-            Instantiate(ufoPrefabs[ufoIndex],new Vector3(0,0,15), ufoPrefabs[ufoIndex].transfrom.rotation);
+            Instantiate(ufoPrefabs[ufoIndex],new Vector3(0,0,15), ufoPrefabs[ufoIndex].transform.rotation);
         }
     }
 }
