@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PickupDelete : MonoBehaviour
-{
 
-    public class DestroyOutOfBounds : MonoBehaviour
 {
     public float topBounds = 30.0f;
     public float lowerBounds = -10.0f;
