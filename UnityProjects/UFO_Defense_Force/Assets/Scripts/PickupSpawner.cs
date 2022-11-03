@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickupSpawner : MonoBehaviour
 {
-public GameObject[] ufoPrefabs; // Array to store UFO ships
+public GameObject[] ufoPrefabs; // Array to store Pickup itam
     private float spawnRangeX = 20f;
     private float spawnPosZ = 20f;
 
@@ -25,7 +25,7 @@ public GameObject[] ufoPrefabs; // Array to store UFO ships
     void SpawnPickup()
     {
         Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX,spawnRangeX),0,spawnPosZ);
-        int ufoIndex = Random.Range(0,ufoPrefabs.Length); // Picks a random UFO from the array
-        Instantiate(ufoPrefabs[ufoIndex],spawnPos, ufoPrefabs[ufoIndex].transform.rotation); // Spawms a indexed UFO from the array a random location on the X-Axis
+        int ufoIndex = Random.Range(0,ufoPrefabs.Length); // Picks the pickup from the array
+        Instantiate(ufoPrefabs[ufoIndex],spawnPos, ufoPrefabs[ufoIndex].transform.rotation); // Spawns the pickup itam the array a random location on the X-Axis
     }
 }
