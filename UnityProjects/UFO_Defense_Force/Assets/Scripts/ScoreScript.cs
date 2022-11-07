@@ -15,7 +15,7 @@ public class ScoreScript : MonoBehaviour
     {
         
         PowerNum = 0;
-        MyscoreText.text = "Score : " + PowerNum;
+        MyscoreText.text = "Power : " + PowerNum;
 
     }
 
