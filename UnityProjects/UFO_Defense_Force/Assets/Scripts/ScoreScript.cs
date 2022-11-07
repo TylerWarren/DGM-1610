@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
     public Text MyscoreText;
-    private int ScoreNum;
+    private int PowerNum;
 
 
     // Start is called before the first frame update
@@ -15,7 +15,7 @@ public class ScoreScript : MonoBehaviour
     {
         
         ScoreNum = 0;
-        MyscoreText.text = "Score : " + ScoreNum;
+        MyscoreText.text = "Score : " + PowerNum;
 
     }
 
@@ -28,7 +28,7 @@ public class ScoreScript : MonoBehaviour
 
             ScoreNum += 1;
             Destroy(Pickup.gameObject);
-            MyscoreText.text = "Score" + ScoreNum;
+            MyscoreText.text = "Power" + ScoreNum;
 
         }
 
