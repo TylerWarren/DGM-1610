@@ -14,7 +14,7 @@ public class ScoreScript : MonoBehaviour
     void Start()
     {
         
-        ScoreNum = 0;
+        PowerNum = 0;
         MyscoreText.text = "Score : " + PowerNum;
 
     }
@@ -26,9 +26,9 @@ public class ScoreScript : MonoBehaviour
         if (Pickup.tag == "MyPickup")
         {
 
-            ScoreNum += 1;
+            PowerNum += 1;
             Destroy(Pickup.gameObject);
-            MyscoreText.text = "Power" + ScoreNum;
+            MyscoreText.text = "Power" + PowerNum;
 
         }
 
