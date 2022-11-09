@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro; // Text Mesh Pro namespace added to access the unity librarys for UI
 
 
 public class ScoreScript : MonoBehaviour
