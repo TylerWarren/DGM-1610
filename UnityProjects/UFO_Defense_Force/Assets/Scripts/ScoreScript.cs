@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro; // Text Mesh Pro namespace added to access the unity librarys for UI
+using UnityEngine.UI;
 
 
 public class ScoreScript : MonoBehaviour
 {
-    public Text MyscoreText;
+    public TMPro MyscoreText;
     private int PowerNum;
 
 
