@@ -451,7 +451,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Score 00
+  m_Text: Power 00
 --- !u!222 &1209249817
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
-  speed: 25
+  speed: 50
   xRange: 30
   blaster: {fileID: 778598707}
   lazerBolt: {fileID: 3887426639425454620, guid: 27fb02fbe71a47a4fa7b5da7a91027dc, type: 3}
@@ -883,7 +883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2143747537}
-  - component: {fileID: 2143747536}
+  - component: {fileID: 2143747538}
   m_Layer: 0
   m_Name: PickupSpawner
   m_TagString: Untagged
@@ -891,20 +891,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2143747536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143747535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e575539e3c075b441b54e30f70682153, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 3
-  objectToSpawn: {fileID: 1010301717785469090, guid: 82b52c1aabe59a74a955f1bce84cfb05, type: 3}
 --- !u!4 &2143747537
 Transform:
   m_ObjectHideFlags: 0
@@ -920,3 +906,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &2143747538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143747535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a802ec3a9a9ac141991e592c93e047b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ufoPrefabs:
+  - {fileID: 1010301717785469090, guid: 82b52c1aabe59a74a955f1bce84cfb05, type: 3}
