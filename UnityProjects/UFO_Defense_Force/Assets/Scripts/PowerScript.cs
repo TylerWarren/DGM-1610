@@ -28,7 +28,7 @@ public class PowerScript : MonoBehaviour
 
             PowerNum += 1;
             Destroy(Pickup.gameObject);
-            MyscoreText.text = "Power" + PowerNum;
+            MyscoreText.text = "Power: " + PowerNum;
 
         }
 
