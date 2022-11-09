@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public bool isGameOver;
     private GameObject gameOverText;
-    
+
     void Awake()
     {
         Time.timeScale = 1;
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     }
     public void EndGame()
     {
-        gameOverText.gameObject.SetActive(true);
+        gameOverText.gameObject.SetActive(true); // Make Game Over text appear
         Time.timeScale = 0; // Freeze Time
     }
 }
