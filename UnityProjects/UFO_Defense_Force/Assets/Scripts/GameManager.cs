@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public bool isGameOver;
     private GameObject gameOverText;
+    
     void Awake()
     {
         Time.timeScale = 1;
@@ -16,7 +17,7 @@ public class GameManager : MonoBehaviour
         gameOverText = GameObject.Find("GameOverText");
 
     }
-        // Update is called one per frame
+       // Update is called one per frame
     void update()
     {
         if(isGameOver)
