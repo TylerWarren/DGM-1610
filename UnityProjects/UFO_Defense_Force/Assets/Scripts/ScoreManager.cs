@@ -5,15 +5,26 @@ using TMPro; // Text Mesh Pro namespace added to access the unity librarys for U
 
 public class ScoreManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    
+    public int score; //Keep our score value
+    public TextMeshProUGUI scoreText; // Visual text element to be modified 
+
+    public void IncreaseScore(int amount) // This method when called increases the score by a predetermied amount set in the score variable
     {
-        
+
+        score += amount;
+        UpdateScoreText();
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DecreaseScore(int amount) // This method when called decreases the score by a predetermied amount set in the score variable
     {
-        
+         score += amount;
+        UpdateScoreText();
+    }
+
+    public void UpdateScoreText() // This method updates the score in the HUD UI Text
+    {
+        scoreText.text = "Score: "+ score;
     }
 }
