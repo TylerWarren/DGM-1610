@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollisionDetect : MonoBehaviour
+public class DetectCollision : MonoBehaviour
 {
    public ScoreManager scoreManager; // Store referance to score manager
 
