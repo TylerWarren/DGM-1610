@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro; // Text Mesh Pro namespace added to access the unity librarys for UI
 
 
-public class ScoreScript : MonoBehaviour
+public class PowerScript : MonoBehaviour
 {
     public TextMeshProUGUI MyscoreText;
     private int PowerNum;
