@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         isGameOver = false;
     }
-         void Start()
+    void Start()
     {
         gameOverText = GameObject.Find("GameOverText");
 
