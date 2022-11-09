@@ -16,7 +16,7 @@ public class CollisionDetect : MonoBehaviour
    void OnTriggerEnter(Collider other) // Once the Trigger had been entered record collision in the argument variable "other"
    {
       scoreManager.IncreaseScore(scoreToGive); // Increase the Score 
-      Destroy(GameObject); // Destroy this gameobject
+      Destroy(gameObject); // Destroy this gameobject
       Destroy(other.gameObject); // Destroy the other gameobject it hits
    }
 
