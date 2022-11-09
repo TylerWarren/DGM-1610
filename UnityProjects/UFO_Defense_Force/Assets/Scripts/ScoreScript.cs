@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour
 {
-    public TMPro MyscoreText;
+    public Text MyscoreText;
     private int PowerNum;
 
 
