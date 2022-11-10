@@ -10,9 +10,9 @@ public class DestroyOutOfBounds : MonoBehaviour
 
     void Start()
     {
-        gameManager = gameObject.Find("GameManager").GetComponent<GameManager>(); // Reference GameManager Script
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); // Reference GameManager Script
     }
-    
+
     // Update is called once per frame
     void Update()
     {
