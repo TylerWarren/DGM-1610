@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class GameManager : MonoBehaviour
 {
     public bool isGameOver;
@@ -27,10 +26,9 @@ public class GameManager : MonoBehaviour
         else
             gameOverText.gameObject.SetActive(false); // Keep UI Text Game Over hidden
     }
-
     public void EndGame()
     {
-        gameOverText.gameObject.SetActive(true); // Make Game Over text appear
+        gameOverText.gameObject.SetActive(true);// Make Game Over text appear
         Time.timeScale = 0; // Freeze Time
     }
 }
