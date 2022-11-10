@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        gameOverText.gameObject.SetActive(true);// Make Game Over text appear
+        gameOverText.gameObject.SetActive(true); // Make Game Over text appear
         Time.timeScale = 0; // Freeze Time
     }
 }
