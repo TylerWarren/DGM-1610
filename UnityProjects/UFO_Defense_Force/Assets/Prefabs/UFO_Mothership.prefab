@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 7450592917476106063}
   - component: {fileID: 7450592917476106056}
   - component: {fileID: -1174064433153127695}
-  - component: {fileID: -2950445095351050556}
   - component: {fileID: 8037273435641774826}
   m_Layer: 0
   m_Name: UFO_Mothership
@@ -145,18 +144,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBounds: 40
   lowerBounds: -35
---- !u!114 &-2950445095351050556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7450592917476106057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1605046c1262cb3449fbe626a0b998b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8037273435641774826
 MonoBehaviour:
   m_ObjectHideFlags: 0
