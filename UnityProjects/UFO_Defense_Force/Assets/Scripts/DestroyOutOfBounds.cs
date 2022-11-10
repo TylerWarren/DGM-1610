@@ -6,12 +6,13 @@ public class DestroyOutOfBounds : MonoBehaviour
 {
     public float topBounds = 30.0f;
     public float lowerBounds = -10.0f;
+    public GameManager gameManager; // Store reference to GameManager
 
-
-    void Awake()
+    void Start()
     {
-        Time.timeScale = 1;
+        gameManager = gameObject.Find("GameManager").GetComponent<GameManager>(); // Reference GameManager Script
     }
+    
     // Update is called once per frame
     void Update()
     {
