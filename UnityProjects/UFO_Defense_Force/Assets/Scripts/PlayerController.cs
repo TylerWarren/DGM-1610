@@ -12,8 +12,9 @@ public class PlayerController : MonoBehaviour
     public Transform blaster;
     public GameObject lazerBolt;
 
+    public GameManager gameManager;
 
-    // Start is called before the first frame update
+    
     void Start()
     {   //                             GameObject               Script Component
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); //Reference GameManager script on GameManager object
