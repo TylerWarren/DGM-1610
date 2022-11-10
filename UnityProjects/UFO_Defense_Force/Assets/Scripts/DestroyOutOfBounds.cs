@@ -25,6 +25,7 @@ public class DestroyOutOfBounds : MonoBehaviour
             Debug.Log("Game Over!");
             Destroy(gameObject);
             gameManager.isGameOver = true;
+            Time.timeScale = 0; // Freeze Time
         }
     }
 }
