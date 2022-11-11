@@ -15,12 +15,12 @@ public class Explosion : MonoBehaviour
     void OnTriggerEnter(Collider other)
 
     {
-        if(collision.gameObject.tag == "Explosion");
+        explosionSource.PlayOneShot(explosion, 1.0f);
     }
 
     void Update()
 
     {
-        explosionSource.PlayOneShot(explosion, 1.0f);
+        
     }
 }
