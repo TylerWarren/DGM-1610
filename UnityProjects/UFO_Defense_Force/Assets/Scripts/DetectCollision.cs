@@ -5,7 +5,6 @@ using UnityEngine;
 public class DetectCollision : MonoBehaviour
 {
    public ScoreManager scoreManager; // Store referance to score manager
-   public AudioSource explosionSound;
 
    public int scoreToGive;
 
@@ -18,11 +17,5 @@ public class DetectCollision : MonoBehaviour
       scoreManager.IncreaseScore(scoreToGive); // Increase the Score 
       Destroy(gameObject); // Destroy this gameobject
       Destroy(other.gameObject); // Destroy the other gameobject it hits
-      explosionSound.Play();
-   }
-
-   void Update()
-   {
-      
    }
 }
