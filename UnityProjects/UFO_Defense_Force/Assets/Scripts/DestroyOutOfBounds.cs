@@ -12,6 +12,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); // Reference GameManager Script
+        gameOver = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
