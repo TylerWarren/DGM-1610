@@ -19,7 +19,7 @@ public class Explosion : MonoBehaviour
         if(collision.gameobject.tag == "Target")
 
         {
-            explosionSource.PlayOneShot(explosion, 1.0f);
+            explosion.PlayOneShot(explosionSource, 1.0f);
         }
     }
 }
