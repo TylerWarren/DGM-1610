@@ -11,7 +11,7 @@ public class Explosion : MonoBehaviour
         explosionSource = GetComponent<AudioSource>();
     }
     
-    void OnCollisionsEnter(Collision collision)
+    public void OnCollisionsEnter(Collision collision)
 
     {
         if(collision.gameObject.tag == "Explosion")
