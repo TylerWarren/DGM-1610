@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    public AudioClip explosionSource;
+    public AudioClip explosion;
+    private AudioSource explosionSource;
 
     void Start()
     {
@@ -15,6 +16,11 @@ public class Explosion : MonoBehaviour
 
     {
         if(collision.gameObject.tag == "Explosion")
+    }
+
+    void Update()
+
+    {
         explosionSource.PlayOneShot(explosion, 1.0f);
     }
 }
