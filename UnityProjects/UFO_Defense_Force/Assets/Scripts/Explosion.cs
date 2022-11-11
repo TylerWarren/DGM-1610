@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    public AudioSource playSound;
+    public AudioSource explosionSound;
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionsEnter(Collision collision)
+
     {
-        playSound.Play();
+        if(collision.gameObject.tag == "Explosion")
+        explosionSound.Play();
     }
 }
