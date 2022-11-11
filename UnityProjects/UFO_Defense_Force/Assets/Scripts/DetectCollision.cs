@@ -13,7 +13,7 @@ public class DetectCollision : MonoBehaviour
    void Start()
    {
       scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>(); // Find ScoreManager gameobject and reference ScoreManager script component
-      explosion = GetComponent<AudioSource>();
+      explosionSound = GetComponent<AudioSource>();
    }
    void OnTriggerEnter(Collider other) // Once the Trigger had been entered record collision in the argument variable "other"
    {
