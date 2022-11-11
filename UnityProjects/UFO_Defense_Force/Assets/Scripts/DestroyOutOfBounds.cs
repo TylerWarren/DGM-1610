@@ -28,7 +28,7 @@ public class DestroyOutOfBounds : MonoBehaviour
             Destroy(gameObject);
             gameManager.isGameOver = true;
             Time.timeScale = 0; // Freeze Time
-            gameOverSound.PlayOneShot(gameOverSound, 1.0f);
+            gameOverSound.PlayOneShot(gameOver, 1.0f);
         }
     }
 }
