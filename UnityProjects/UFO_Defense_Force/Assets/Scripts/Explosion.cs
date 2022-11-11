@@ -15,7 +15,7 @@ public class Explosion : MonoBehaviour
     public void OnCollisionsEnter(Collision collision)
 
     {
-        if(collision.gameObject.tag == "Explosion")
+        if(collision.gameObject.tag == "Explosion");
     }
 
     void Update()
