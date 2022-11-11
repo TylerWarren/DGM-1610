@@ -22,6 +22,6 @@ public class DetectCollision : MonoBehaviour
    }
    void Update()
    {
-      explosionSound.Play();
+      explosionSound.Play ();
    }
 }
