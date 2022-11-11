@@ -6,7 +6,7 @@ public class DetectCollision : MonoBehaviour
 {
    public ScoreManager scoreManager; // Store referance to score manager
    public AudioClip explosion;
-   private AudioSource explosionSound;
+   public AudioSource explosionSound;
 
    public int scoreToGive;
 
