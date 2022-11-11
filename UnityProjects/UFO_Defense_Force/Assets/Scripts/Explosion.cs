@@ -8,13 +8,13 @@ public class Explosion : MonoBehaviour
 
     void Start()
     {
-        explosionSource = GetComponent<AudioSource>();
+        explosionSource = GetComponent<AudioSource> ();
     }
 
     void OnCollisionEnter (Collision collision)
 
     {
-        if(collision.gameobject.tag == "Explosion")
+        if(collision.gameObject.tag == "Explosion")
 
         {
             explosionSource.Play();
