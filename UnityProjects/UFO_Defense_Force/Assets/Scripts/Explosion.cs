@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    public AudioClip explosionSource;
-    private AudioSource explosion;
+    public AudioSource explosionScource;
 
     void Start()
     {
         explosionSource = GetComponent<AudioSource>();
     }
 
-    
     void OnCollisionEnter (Collision collision)
 
     {
-        if(collision.gameobject.tag == "Target")
+        if(collision.gameobject.tag == "Explosion")
 
         {
-            explosion.PlayOneShot(explosionSource, 1.0f);
+            explosionSource.Play();
         }
     }
 }
