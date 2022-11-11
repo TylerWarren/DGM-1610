@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 
     public Transform blaster;
     public GameObject lazerBolt;
+    public AusioClip laserSound;
 
     public GameManager gameManager;
 
