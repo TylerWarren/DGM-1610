@@ -5,7 +5,9 @@ public class GameManager : MonoBehaviour
 {
     public bool isGameOver;
     private GameObject gameOverText;
-
+    public AudioClip gameOver;
+    private AudioSource gameOverSound;
+   
     void Awake()
     {
         Time.timeScale = 1;
@@ -14,7 +16,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         gameOverText = GameObject.Find("GameOverText");
-   
+        gameOverSound = GetComponent<AudioSource>();
     }
        // Update is called one per frame
     void Update()
@@ -22,6 +24,7 @@ public class GameManager : MonoBehaviour
         if(isGameOver)
         {
             EndGame(); // Start EndGame method
+            gameOverSound.PlayOneShot(gameOver, 1.0f);
         }
         else
             gameOverText.gameObject.SetActive(false); // Keep UI Text Game Over hidden
