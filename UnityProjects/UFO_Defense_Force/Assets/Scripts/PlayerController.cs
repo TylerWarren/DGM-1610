@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private AudioSource playerAudio
     public float horizontalInput;
     public float speed = 25;
 
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {   //                             GameObject               Script Component
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); //Reference GameManager script on GameManager object
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -46,6 +48,7 @@ public class PlayerController : MonoBehaviour
         {
             //Create lazerBolt at the blaster transform position maintaining the objects rotation.
             Instantiate(lazerBolt, blaster.transform.position, lazerBolt.transform.rotation);
+            playerAudio.PlayOneShot(laserSound, 1.0f);
         }
     }
 }
