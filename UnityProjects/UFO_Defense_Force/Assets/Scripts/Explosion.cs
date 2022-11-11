@@ -15,6 +15,6 @@ public class Explosion : MonoBehaviour
 
     {
         if(collision.gameObject.tag == "Explosion")
-        explosionSource.Play ();
+        explosionSource.Play();
     }
 }
