@@ -20,11 +20,10 @@ public class DetectCollision : MonoBehaviour
       scoreManager.IncreaseScore(scoreToGive); // Increase the Score 
       Destroy(gameObject); // Destroy this gameobject
       Destroy(other.gameObject); // Destroy the other gameobject it hits
-      explosionSound.PlayOneShot(explosion, 1.0f);
    }
 
    void Update()
    {
-      
+      explosionSound.PlayOneShot(explosion, 1.0f);
    }
 }
