@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private AudioSource playerAudio
+    private AudioSource playerAudio;
     public float horizontalInput;
     public float speed = 25;
 
