@@ -6,6 +6,11 @@ public class Explosion : MonoBehaviour
 {
     public AudioSource explosionSource;
 
+    void Start()
+    {
+        explosionSource = GetComponent<AudioSource>();
+    }
+    
     void OnCollisionsEnter(Collision collision)
 
     {
