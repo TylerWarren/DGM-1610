@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
+    private AudioSource gameOver;
     public float topBounds = 30.0f;
     public float lowerBounds = -10.0f;
     public GameManager gameManager; // Store reference to GameManager
@@ -26,6 +27,7 @@ public class DestroyOutOfBounds : MonoBehaviour
             Destroy(gameObject);
             gameManager.isGameOver = true;
             Time.timeScale = 0; // Freeze Time
+            playerAudio.PlayOneShot(gameOver, 1.0f);
         }
     }
 }
