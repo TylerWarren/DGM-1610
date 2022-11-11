@@ -5,8 +5,7 @@ using UnityEngine;
 public class DetectCollision : MonoBehaviour
 {
    public ScoreManager scoreManager; // Store referance to score manager
-   public AudioClip explosion;
-   private AudioSource explosionSound;
+   public AudioSource explosionSound;
 
    public int scoreToGive;
 
@@ -23,6 +22,6 @@ public class DetectCollision : MonoBehaviour
    }
    void Update()
    {
-      explosionSound.PlayOneShot(explosion, 1.0f);
+      explosionSound.Play();
    }
 }
