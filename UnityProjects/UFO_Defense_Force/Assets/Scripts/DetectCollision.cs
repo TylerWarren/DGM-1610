@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DetectCollision : MonoBehaviour
 {
-   private AudioSource explosion;
+   private AudioSource explosionSound;
    public ScoreManager scoreManager; // Store referance to score manager
-   public AudioSource explosionSound;
+   public AudioChip explosion;
 
    public int scoreToGive;
 
