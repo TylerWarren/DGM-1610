@@ -6,17 +6,17 @@ public class Explosion : MonoBehaviour
 {
     public AudioSource explosionSource;
 
-    void Start()
-    {
+    void Start() {
         explosionSource = GetComponent<AudioSource> ();
     }
 
-    void OnCollisionEnter (Collision collision)
+    void Update() {
+        
+    }
 
-    {
-        if(collision.gameObject.tag == "Explosion")
+    void OnCollisionEnter (Collision collision) {
+        if(collision.gameObject.tag == "Explosion") {
 
-        {
             explosionSource.Play();
         }
     }
