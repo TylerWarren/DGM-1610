@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pickup
   - MyPickup
+  - Explosion
   layers:
   - Default
   - TransparentFX
