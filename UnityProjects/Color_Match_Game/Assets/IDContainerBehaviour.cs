@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class IDContainerBehaviourScript : MonoBehaviour
+public class IDContainerBehaviour : MonoBehaviour
 {
     public ID idObj;
 }
