@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[RequireComponwnt(typeof(SpriteRenderer))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class SpriteBehaviour : MonoBehaviour
 {
     private SpriteRenderer rendererObj;
