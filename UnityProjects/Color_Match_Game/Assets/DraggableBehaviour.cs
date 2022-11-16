@@ -12,7 +12,7 @@ public class DraggableBehaviour : MonoBehaviour
         cameraObj = Camera.main;
     }
 
-    public IEnumweator OnMouseDown()
+    public IEnumerator OnMouseDown()
     {
         draggable = true;
 
