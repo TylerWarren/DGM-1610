@@ -11,6 +11,6 @@ public class SpriteBehaviour : MonoBehaviour
 
     public void ChangeRenderColor(Color color)
     {
-        rendererObj.color = obj.value;
+        rendererObj.color = color;
     }
 }
