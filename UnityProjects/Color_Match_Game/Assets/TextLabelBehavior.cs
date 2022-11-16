@@ -1,6 +1,6 @@
 using System.Globolization;
 using UnityEngine;
-using UnityEngine.Event;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
