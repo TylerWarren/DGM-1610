@@ -8,6 +8,7 @@ public class DraggableBehaviour : MonoBehaviour
     private Camera cameraObj;
     public bool draggable;
     public Vector3 position, offset;
+    public UnityEvent, startDragEvent, endDragEvent;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class DraggableBehaviour : MonoBehaviour
     {
         offset = transform.position - cameraObj.ScreenToWorldPoint(Input.mousePosition);
         draggable = true;
+        startDragEvent.Invoke();
         yield return new WaitForFixedUpdate();
 
         while (draggable)
@@ -31,5 +33,6 @@ public class DraggableBehaviour : MonoBehaviour
     private void OnMouseUp()
     {
         draggable = false;
+        endDragEvent.Invoke();
     }
 }
