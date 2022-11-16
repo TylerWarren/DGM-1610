@@ -3,12 +3,11 @@ using UnityEngine;
 public class MatchBehavior : MonoBehaviour
 {
     public ID idObj;
-    private ID otherID;
 
     private void OnTriggerEnter(Collider other)
     {
         var tempObj = other.GetComponent<IDContainerBehaviour>();
-        if(tempObj = null)
+        if(tempObj == null)
             return;
 
         var otherID = tempObj.idObj;
