@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
-using Text;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
 public class TextLabelBehavior : MonoBehaviour
