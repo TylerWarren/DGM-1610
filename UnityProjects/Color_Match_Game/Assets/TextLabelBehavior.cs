@@ -1,4 +1,4 @@
-using System.Globolization;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
