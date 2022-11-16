@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class TextLabelBehaviour : MonoBehaviour
 {
    private Text label;
-   public int CultureInfo
+   public int CultureInfo;
    public UnityEvent startEvent;
    private void Start()
    {
