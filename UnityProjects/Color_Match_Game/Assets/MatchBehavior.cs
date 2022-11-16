@@ -9,6 +9,8 @@ public class MatchBehavior : MonoBehaviour
     {
         var tempObj = other.GetComponent<IDContainerBehaviour>();
         if(tempObj != null) otherID = tempObj.idObj;
+
+        var otherID = tempObj.idObj;
         if (otherID == idObj)
         {
             Debug.Log("Matched");
