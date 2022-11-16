@@ -18,7 +18,7 @@ public class DraggableBehaviour : MonoBehaviour
     {
         offset = transform.position - cameraObj.ScreenToViewportPoint(Input.mousePosition);
         draggable = true;
-        yield return new WaitForFixedUpdate
+        yield return new WaitForFixedUpdate();
 
         while (draggable)
         {
