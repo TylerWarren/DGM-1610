@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Globolization;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
