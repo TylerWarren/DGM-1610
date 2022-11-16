@@ -19,7 +19,7 @@ public class DraggableBehaviour : MonoBehaviour
         while (draggable)
         {
             yield return new WaitForFixedUpdate();
-            Debug.Log("Drag")
+            Debug.Log("Drag");
         }
     }
 
