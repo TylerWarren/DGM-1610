@@ -16,7 +16,7 @@ public class IntData : ScriptableObject
 
     public void CompareValue(IntData obj)
     {
-        if (value >= obj.value)
+        if (value <= obj.value)
         {
 
         }
