@@ -3,7 +3,6 @@ using UnityEngine.Events;
 
 public class MatchBehavior : IDcontainerBehaviour
 {
-    public ID idObj;
     public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
 
     private IEmunmerator OnTriggerEnter(Collider other)
