@@ -5,7 +5,7 @@ public class MatchBehavior : IDcontainerBehaviour
 {
     public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
 
-    private IEmunmerator OnTriggerEnter(Collider other)
+    private IEnumerator OnTriggerEnter(Collider other)
     {
         var tempObj = other.GetComponent<IDContainerBehaviour>();
         if(tempObj == null)
