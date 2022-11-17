@@ -4,6 +4,6 @@ public class TransformBehaviour : MonoBehaviour
 {
     public void ResetToZero()
     {
-        transfrom.position = Vector3.zero;
+        transform.position = Vector3.zero;
     }
 }
