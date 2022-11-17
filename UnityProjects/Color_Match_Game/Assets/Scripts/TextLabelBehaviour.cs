@@ -8,7 +8,7 @@ public class TextLabelBehaviour : MonoBehaviour
 {
    private Text label;
    public UnityEvent startEvent;
-   private void Start()
+   private void Awake()
    {
         label = GetComponent<Text>();
         startEvent.Invoke();
