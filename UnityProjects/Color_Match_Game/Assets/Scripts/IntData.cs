@@ -5,9 +5,9 @@ using UnityEngine.Events;
 public class IntData : ScriptableObject
 
 {
-    public UnityEvent disableEvent;
-
     public int value;
+    
+    public UnityEvent disableEvent;
 
     public void SetValue(int num)
     {
