@@ -1,7 +1,8 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MatchBehavior : IDcontainerBehaviour
+public class MatchBehavior : IDContainerBehaviour
 {
     public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
 
