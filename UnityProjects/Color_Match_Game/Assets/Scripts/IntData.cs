@@ -1,7 +1,5 @@
 using System;
 using UnityEngine;
-
-
 [CreateAssetMenu]
 
 public class IntData : ScriptableObject
@@ -9,6 +7,7 @@ public class IntData : ScriptableObject
     public int value;
     
 
+   
     public void SetValue(int num)
     {
         value = num;
@@ -16,9 +15,9 @@ public class IntData : ScriptableObject
 
     public void CompareValue(IntData obj)
     {
-        if (value <= obj.value)
+        if (value >= obj.value)
         {
-
+        
         }
         else
         {
