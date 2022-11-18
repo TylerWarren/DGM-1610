@@ -4,9 +4,15 @@ using UnityEngine.Events;
 
 public class MatchBehavior : IDContainerBehaviour
 {
+    void Start()
+    {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); // Reference GameManager Script
+    }
+
     public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
 
     private IEnumerator OnTriggerEnter(Collider other)
+    
     {
         var tempObj = other.GetComponent<IDContainerBehaviour>();
         if(tempObj == null)
@@ -23,7 +29,6 @@ public class MatchBehavior : IDContainerBehaviour
             yield return new WaitForSeconds(0.5f);
             noMatchDelayedEvent.Invoke();
             Debug.Log("Game Over!");
-            Destroy(gameObject);
             gameManager.isGameOver = true;
             Time.timeScale = 0; // Freeze Time
         
