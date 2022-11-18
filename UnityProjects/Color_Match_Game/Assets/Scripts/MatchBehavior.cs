@@ -22,6 +22,11 @@ public class MatchBehavior : IDContainerBehaviour
             noMatchEvent.Invoke();
             yield return new WaitForSeconds(0.5f);
             noMatchDelayedEvent.Invoke();
-        }
+            Debug.Log("Game Over!");
+            Destroy(gameObject);
+            gameManager.isGameOver = true;
+            Time.timeScale = 0; // Freeze Time
+        
+         }
     }
 }
