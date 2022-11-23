@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class CoroutineBehaviour2 : MonoBehaviour
+public class CoroutineBehaviour : MonoBehaviour
 {
     public UnityEvent startEvent, startCountEvent, repeatCountEvent, endCountEvent,RepeatUntilFalseEvent;
 
