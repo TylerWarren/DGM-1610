@@ -3,8 +3,15 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Instancer : ScriptableObject
 {
-    public void CreatInstance(GameObject obj)
+    public GameObject prefab;
+
+    public void CreateInstance()
     {
-        Instantiate(obj);
+        Instantiate(prefab);
+    }
+
+    public void CreateInstance(Vector3Deta obj)
+    {
+        Instantiate(prefab, obj.value, Quaternion.identity);
     }
 }
