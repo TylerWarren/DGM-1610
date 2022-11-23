@@ -2,7 +2,7 @@ using UnityEngine;
 
 [CreateAssetMenu]
 
-public class Vector3Deta : ScriptableObject
+public class Vector3Data : ScriptableObject
 {
    public Vector3 value;
 }
