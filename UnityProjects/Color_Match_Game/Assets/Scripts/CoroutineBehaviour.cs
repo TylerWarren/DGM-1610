@@ -7,7 +7,7 @@ public class CoroutineBehaviour : MonoBehaviour
 {
     public UnityEvent startEvent, repeatEvent, endEvent;
 
-    public IntData counterNum = 3;
+    public IntData counterNum;
     public float seconds = 3.0f;
     private WaitForSeconds wfsObj;
     private WaitForFixedUpdate wffuObj;
