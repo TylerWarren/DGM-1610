@@ -31,7 +31,7 @@ public class CoroutineBehaviour : MonoBehaviour
         yield return wfsObj;
         while (counterNum.value > 0)
         {
-            repeatEvent.Invoke();
+            repeatCountEvent.Invoke();
             counterNum.value--;
             yield return wfsObj;
         }
