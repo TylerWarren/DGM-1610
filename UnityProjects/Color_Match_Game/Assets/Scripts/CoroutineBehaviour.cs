@@ -17,7 +17,7 @@ public class CoroutineBehaviour2 : MonoBehaviour
         wffuObj = new WaitForFixedUpdate();
         startEvent.Invoke();
         yield return wfsObj;
-        while (counterNum.value > 0);
+        while (counterNum.value > 0)
 
         {
             repeatEvent.Invoke();
