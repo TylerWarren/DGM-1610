@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 public UnityEvent startEvent, startCountEvent, repeatCountEvent, endCountEvent,RepeatUntilFalseEvent;
- 
+ {
     public bool canRun;
     public IntData counterNum;
     public float seconds = 3.0f;
