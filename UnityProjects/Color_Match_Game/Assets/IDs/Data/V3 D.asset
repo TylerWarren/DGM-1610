@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed635569041f28f43bc65d5f96679b15, type: 3}
-  m_Name: Prefab Instancer
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 4998127832159938388, guid: 1a54b0f05df0b4340acc28850ffd9c40, type: 3}
+  m_Script: {fileID: 11500000, guid: 310a034e0d57773438d9fde6b3a9b5f8, type: 3}
+  m_Name: V3 D
+  m_EditorClassIdentifier: Assembly-CSharp::Vector3Deta
+  value: {x: 4, y: 5, z: 0}
