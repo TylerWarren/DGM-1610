@@ -4,6 +4,7 @@ using UnityEngine;
 public class Instancer : ScriptableObject
 {
     public GameObject prefab;
+    private int num;
 
     public void CreateInstance()
     {
@@ -15,11 +16,21 @@ public class Instancer : ScriptableObject
         Instantiate(prefab, obj.value, Quaternion.identity);
     }
 
-    public void CreateInstance(Vector3DataList obj)
+    public void CreateInstanceFromList(Vector3DataList obj)
     {
-        for (var i = 0; i < obj.vector3DList.Count; i++)
+        foreach (var t in obj.vector3DList.Count; i++)
         {
-            Instantiate(prefab, obj.vector3DList[i].value, Quaternion.identity);
+            Instantiate(prefab, t.value, Quaternion.identity);
+        }
+    }
+
+    public void CreateInstanceFromListCounting(Vector3DataList obj)
+    {
+        Instantiate(prefab, obj.vector3DList[num].value, Quaternion.identity);
+        num++;
+        if (num == obj.vector3DList.Count)
+        {
+            num = 0;
         }
     }
 }
