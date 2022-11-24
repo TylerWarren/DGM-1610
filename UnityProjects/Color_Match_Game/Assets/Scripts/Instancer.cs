@@ -17,7 +17,7 @@ public class Instancer : ScriptableObject
 
     public void CreateInstanceFromList(Vector3DataList obj)
     {
-        foreach (var t in obj.vector3DList.Count; i++)
+        foreach (var t in obj.vector3DList)
         {
             Instantiate(prefab, t.value, Quaternion.identity);
         }
