@@ -19,7 +19,7 @@ public class Instancer : ScriptableObject
     {
         for (var i = 0; i < obj.vector3DList.Count; i++)
         {
-            Instantiate(prefab, obj.vector3DList[0].value, Quaternion.identity);
+            Instantiate(prefab, obj.vector3DList[i].value, Quaternion.identity);
         }
     }
 }
