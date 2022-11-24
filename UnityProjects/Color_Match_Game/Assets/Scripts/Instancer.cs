@@ -5,7 +5,6 @@ public class Instancer : ScriptableObject
 {
     public GameObject prefab;
     private int num;
-
     public void CreateInstance()
     {
         Instantiate(prefab);
