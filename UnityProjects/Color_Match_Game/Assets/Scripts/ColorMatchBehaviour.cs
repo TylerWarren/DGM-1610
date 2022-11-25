@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorMatchBehaviour : MatchBehaviour
+public class ColorMatchBehaviour : MatchBehavior
 {
     public ColorIDDataList colorIDDataListObj;
 
