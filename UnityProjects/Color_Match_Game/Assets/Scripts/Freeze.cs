@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Freeze : MonoBehaviour
 {
-    void Update()
+    void Start()
     {
         Time.timeScale = 0; // Freeze Time
     }
