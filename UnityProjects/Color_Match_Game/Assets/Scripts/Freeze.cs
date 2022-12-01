@@ -8,4 +8,9 @@ public class Freeze : MonoBehaviour
     {
         Time.timeScale = 0; // Freeze Time
     }
+
+    void Start()
+    {
+        Time.timeScale = 1;
+    }
 }
