@@ -9,5 +9,8 @@ public class Freeze : MonoBehaviour
         Time.timeScale = 0; // Freeze Time
     }
 
-
+    void Update()
+    {
+        Time.timeScale = 1;
+    }
 }
