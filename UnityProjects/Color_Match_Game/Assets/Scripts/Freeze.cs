@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Freeze : MonoBehaviour
 {
+    public Button StartButton;
     void Start()
+
     {
         Time.timeScale = 0; // Freeze Time
         Button btn = StartButton.GetComponent<Button>();
