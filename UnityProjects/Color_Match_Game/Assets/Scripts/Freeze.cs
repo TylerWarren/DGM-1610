@@ -7,7 +7,7 @@ public class Freeze : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0; // Freeze Time
-        Button btn = yourButton.GetComponent<StartButton>();
+        Button btn = StartButton.GetComponent<Button>();
 		btn.onClick.AddListener(TaskOnClick);
     }
 
